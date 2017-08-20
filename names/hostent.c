@@ -15,6 +15,9 @@ main(int argc, char **argv)
 			continue;
 		}
 		printf("official hostname: %s\n", hptr->h_name);
+		
+		if(*(hptr->h_aliases) == NULL)
+			printf("\taliasname is NULL\n");
 
 		for (pptr = hptr->h_aliases; *pptr != NULL; pptr++)
 			printf("\talias: %s\n", *pptr);

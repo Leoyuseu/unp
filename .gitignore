@@ -19,6 +19,7 @@
 *.so.dbg
 *.mod.c
 *.i
+*.lc
 *.lst
 *.symtypes
 *.order
